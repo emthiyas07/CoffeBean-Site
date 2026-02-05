@@ -1,0 +1,152 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.overall{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #eedfd5;
+}
+.card{
+    height: 500px;
+    width: 450px;
+    background-color: #d7b7a3;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);}
+.online{
+    height: 45%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+.onlinecart{
+    height: 50%;
+    width: 100%;
+    /* background-color: cadetblue; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.totalamt{
+    height: 25%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.or{
+    height: 10%;
+    /* background-color: azure; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+.app button{
+    width: 60%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.cartbtn{
+    width: 40%;
+    /* height: 70px; */
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+#cnum{
+    width: 100%;
+    padding: 10px;
+}
+.carddetail{
+    display: flex;
+    gap: 25px;
+}
+.carddetail input{
+    width: 30%;
+    padding: 10px;
+    
+}
+.payment-card {
+    background: #ffff;
+    width: 320px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    position: absolute;
+    top: -100%;
+    /* left: 610px; */
+    transition: all 2s;
+    /* left:unset; */
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+    background: #28a745;
+    color: #fff;
+    font-size: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.payment-card h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.payment-card p {
+    color: #555;
+    font-size: 14px;
+}
+
+.details {
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.payment-card button {
+    background: #2b1b0f;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+button:hover {
+    background: #3c2616;
+}
+
+@media (max-width: 480px) {
+    .card{
+        width: 90%;
+    }
+    .line{
+        display: none;
+    }
+}

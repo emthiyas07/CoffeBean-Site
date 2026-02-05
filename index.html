@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.E. Coffee Beans</title>
+  <!-- <img rel="icon" src="./logo.png" alt="logo"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+  <div class="conatiner">
+    <!-- Cart function box -->
+    <div class="carts" id="card">
+      <div class="titles d-flex">
+        <h1>Cart Items</h1>
+        <i onclick="hide()" class="fa-solid fa-circle-xmark wrong"></i>
+      </div>
+      <div id="addcart">
+
+      </div>
+
+    </div>
+    <div class="nav">
+      <div class="nav-left">
+        <img class="logo" src="./logo.png" alt="Coffeebeans">
+        <h1>M.E. Coffee</h1>
+      </div>
+
+      <input type="text" oninput="SearchIn()" id="search" placeholder="Search Here">
+
+      <div class="nav-links" id="navLinks">
+        <a href="#HOME">HOME</a>
+        <a href="#PREMIUM">PREMIUM</a>
+        <a href="#NORMAL">NORMAL</a>
+        <a href="#footer">ABOUT US</a>
+      </div>
+
+      <div class="nav-icons">
+        <div class="cart-icon">
+          <i class="fa-solid fa-cart-shopping shop-cart" onclick="show()"></i>
+          <span id="cart-count">0</span>
+        </div>
+        <i class="fa-solid fa-bars menu-icon" onclick="toggleMenu()"></i>
+      </div>
+    </div>
+    <div class="home slideshow" id="HOME">
+      <img id="slide" src="banner1.jpg" alt="slideshow">
+    </div>
+    <div class="product1" id="PREMIUM">
+      <h1 class="white">PREMIUM QUALITY</h1>
+    </div>
+    <!-- Product details -->
+    <div id="ProductContainer">
+
+    </div>
+    <div class="home slideshow1 slideshow">
+      <img id="slide1" src="./11243676.png" alt="slideshow1">
+    </div>
+    <div class="product1" id="NORMAL">
+      <h1 class="white">NORMAL QUALITY</h1>
+    </div>
+    <div id="ProductContainer1">
+
+    </div>
+  </div>
+  <!-- <div class="footer" id="ABOUTUS"> -->
+
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <!-- Left Section -->
+      <div class="footer-about">
+        <div class="footer-lg">
+          <img src="./logo.png" class="footer-logo" alt="logo" />
+          <h1> M.E. COFFEE<br />BEANS</h1>
+        </div>
+        <p>
+          Coffee Beans is your ultimate destination for premium coffee
+          experiences. We are passionate about sourcing the finest beans from
+          around the world and delivering them to your doorstep. Whether you're
+          a seasoned coffee connoisseur or just starting your journey, we have
+          something for everyone.
+        </p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Solution</a>
+        <a href="#">Fitouts</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <!-- Our Product -->
+      <div class="footer-links">
+        <h3>Our Product</h3>
+        <a href="#PREMIUM">Premium Coffee</a>
+        <a href="#NORMAL">Normal Coffee</a>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> No.32, kumaraswamy st,
+          perambur, Chennai, Tamil Nadu 600011.
+        </p>
+        <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+        <p><i class="fa-solid fa-envelope"></i> coffeebeans@email.com</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="footer-bottom">
+      <p>Copyright © 2025 — M.E. COFFEE BEANS — All Rights Reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+      </p>
+    </div>
+  </footer>
+
+
+  </div>
+  <script src="./index.js" defer></script>
+</body>
+
+</html>
